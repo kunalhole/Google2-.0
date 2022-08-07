@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useRouter } from "next/router"
 import { useRef } from "react"
 import Avatar from "./Avatar"
+import HeaderOptions from "./HeaderOptions"
 
 const Header = () => {
   const router = useRouter()
@@ -20,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 bg-white">
-      <div className="flex items-center p-6 w-full">
+      <div className="flex  items-center p-6 w-full">
         <Image
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           height={40}
@@ -50,6 +51,7 @@ const Header = () => {
           className="ml-auto"
         />
       </div>
+      <HeaderOptions />
     </header>
   )
 }
