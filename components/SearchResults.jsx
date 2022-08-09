@@ -1,3 +1,5 @@
+import PaginationButtons from "./PaginationButtons"
+
 const SearchResults = ({ result }) => {
   return (
     <div className="mx-auto w-full px-3 sm:pl-[4%] md:pl-[14%] lg:pl-52">
@@ -24,6 +26,7 @@ const SearchResults = ({ result }) => {
           </div>
         )
       })}
+      <PaginationButtons />
     </div>
   )
 }

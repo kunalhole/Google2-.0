@@ -25,7 +25,7 @@ const Search = ({ result }) => {
 export default Search
 
 export async function getServerSideProps(context) {
-  const useDummyQata = true
+  const useDummyQata = false
   const startIndex = context.query.start || "0"
   const data = useDummyQata
     ? Response
